@@ -4,113 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UrselsQuizApp</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <h1 class="header--headline-1">Quiz-App</h1>
+      <h1 class="header__headline-1">Quiz-App</h1>
     </header>
 
-    <main class="cards-box">
-      <section class="card card--card-1">
-        <header class="card--header-box">
+    <main class="main">
+      <section class="card card__card--1">
+        <header class="card__header-box">
           <img
             src="./resources/img/bookmark_black_24dp.svg"
             alt="click to bookmark the question"
-            class="card--header-bookmark card--header-bookmark__clicked"
+            class="card__header-bookmark"
           />
-          <h2 class="card--header-headline-2">Question</h2>
+          <h2 class="card__header-headline-2">Question</h2>
         </header>
-        <p class="card--question">
+        <p class="card__question">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
           dolor. Nisi.
         </p>
-        <button class="card--button">SHOW ANSWER</button>
-        <p class="card--answer">
+        <button class="card__button">SHOW ANSWER</button>
+        <p class="card__answer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
           unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
           facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
-          totam?
+          totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          provident minima laborum itaque odio iste, voluptatem, sapiente
+          consequuntur cupiditate nesciunt illo! Odit modi excepturi animi,
+          distinctio numquam consequatur iste labore.
         </p>
+        <footer class="card__footer-box">
+          <span class="card__footer-tag">blablubb</span
+          ><span class="card__footer-tag">blablablubb</span
+          ><span class="card__footer-tag">blablablubbbla</span
+          ><span class="card__footer-tag">blab</span>
+        </footer>
       </section>
 
-      <section class="card card--card-2">
-        <header class="card--header-box">
+      <section class="card card__card--2">
+        <header class="card__header-box">
           <img
             src="./resources/img/bookmark_border_black_24dp.svg"
             alt="click to bookmark the question"
-            class="card--header-bookmark card--header-bookmark__clicked"
+            class="card__header-bookmark"
           />
-          <h2 class="card--header-headline-2">Question</h2>
+          <h2 class="card__header-headline-2">Question</h2>
         </header>
-        <p class="card--question">
+        <p class="card__question">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
           dolor. Nisi.
         </p>
-        <button class="card--button">SHOW ANSWER</button>
-        <p class="card--answer">
+        <button class="card__button">SHOW ANSWER</button>
+        <p class="card__answer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
           unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
           facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
           totam?
         </p>
+        <footer class="card__footer-box">
+          <span class="card__footer-tag">blablubb</span
+          ><span class="card__footer-tag">blablablubb</span
+          ><span class="card__footer-tag">blablablubbbla</span
+          ><span class="card__footer-tag">blab</span>
+        </footer>
       </section>
-      <section class="card card--card-3">
-        <header class="card--header-box">
+
+      <section class="card card__card--3">
+        <header class="card__header-box">
           <img
             src="./resources/img/bookmark_black_24dp.svg"
             alt="click to bookmark the question"
-            class="card--header-bookmark card--header-bookmark__clicked"
+            class="card__header-bookmark"
           />
-          <h2 class="card--header-headline-2">Question</h2>
+          <h2 class="card__header-headline-2">Question</h2>
         </header>
-        <p class="card--question">
+        <p class="card__question">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
           dolor. Nisi.
         </p>
-        <button class="card--button">SHOW ANSWER</button>
-        <p class="card--answer">
+        <button class="card__button">SHOW ANSWER</button>
+        <p class="card__answer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
           unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
           facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
           totam?
         </p>
+        <footer class="card__footer-box">
+          <span class="card__footer-tag">blablubb</span
+          ><span class="card__footer-tag">blablablubb</span
+          ><span class="card__footer-tag">blablablubbbla</span
+          ><span class="card__footer-tag">blab</span>
+        </footer>
       </section>
     </main>
 
     <footer class="footer">
       <nav class="site">
-        <a href="#" class="site--link site--link__clicked"
+        <a href="#" class="site__link site__link--clicked"
           ><img
             src="./resources/img/home_black_24dp.svg"
             alt="home-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="./bookmarks.html" class="site--link site--link__clicked"
+        <a href="./bookmarks.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/bookmark_border_black_24dp.svg"
             alt="bookmark-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="./create.html" class="site--link site--link__clicked"
+        <a href="./create.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/edit_note_black_24dp.svg"
             alt="edit-note-link-icon"
-            class="site--img"
+            class="site__img"
           />
         </a>
-        <a href="./profile.html" class="site--link site--link__clicked"
+        <a href="./profile.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/account_box_black_24dp.svg"
             alt=""
-            class="site--img"
+            class="site__img"
         /></a>
       </nav>
     </footer>

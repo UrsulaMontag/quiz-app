@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UrselsQuizApp</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <h1 class="header--headline-1">Profile</h1>
+      <h1 class="header__headline-1">Profile</h1>
     </header>
 
-    <main class="cards-box profile">
-      <section class="profile--about-box">
-        <figure class="profile--about-header">
+    <main class="main">
+      <section class="about">
+        <figure class="about__header">
           <img
             src="./resources/img/profile_pic_klein.png"
             alt="nice profile pic"
-            class="profile--about-pic"
+            class="about__pic"
           />
-          <figcaption class="profile--about-headline-2">
+          <figcaption class="about__headline-2">
             <h2>Question</h2>
           </figcaption>
         </figure>
-        <p class="profile--about-text">
+        <p class="about__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
@@ -32,70 +33,50 @@
       </section>
 
       <section class="skills">
-        <h2 class="skills--headline-2">Skills</h2>
-        <ul class="skills--list">
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">HTML</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">CSS</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">JS</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">sqLight</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">VScode</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">git</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">gitHub</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">gimp</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">CAD</p>
-          </li>
-          <li class="skills--list-item">
-            <p class="skills--list-item-text">GIS</p>
-          </li>
+        <h2 class="skills__headline-2">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item">HTML</li>
+          <li class="skills__list-item">CSS</li>
+          <li class="skills__list-item">JS</li>
+          <li class="skills__list-item">sqLight</li>
+          <li class="skills__list-item">VScode</li>
+          <li class="skills__list-item">git</li>
+          <li class="skills__list-item">gitHub</li>
+          <li class="skills__list-item">gimp</li>
+          <li class="skills__list-item">ha CAD</li>
+          <li class="skills__list-item">GIS</li>
         </ul>
       </section>
 
-      <button class="profile--button">LOGOUT</button>
+      <button class="button button__logout">LOGOUT</button>
     </main>
 
     <footer class="footer">
       <nav class="site">
-        <a href="./index.html" class="site--link site--link__clicked"
+        <a href="./index.html" class="site__link site__link__clicked"
           ><img
             src="./resources/img/home_black_24dp.svg"
             alt="home-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="./bookmarks.html" class="site--link site--link__clicked"
+        <a href="./bookmarks.html" class="site__link site__link__clicked"
           ><img
             src="./resources/img/bookmark_border_black_24dp.svg"
             alt="bookmark-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="./create.html" class="site--link site--link__clicked"
+        <a href="./create.html" class="site__link site__link__clicked"
           ><img
             src="./resources/img/edit_note_black_24dp.svg"
             alt="edit-note-link-icon"
-            class="site--img"
+            class="site__img"
           />
         </a>
-        <a href="#" class="site--link site--link__clicked"
+        <a href="#" class="site__link site__link__clicked"
           ><img
             src="./resources/img/account_box_black_24dp.svg"
             alt=""
-            class="site--img"
+            class="site__img"
         /></a>
       </nav>
     </footer>
