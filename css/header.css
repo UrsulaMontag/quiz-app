@@ -1,5 +1,12 @@
 .header {
   grid-column: 1 /-1;
+
+  background-color: var(--items--bg-color);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header__headline-1 {
   justify-self: center;
   align-self: center;
 }

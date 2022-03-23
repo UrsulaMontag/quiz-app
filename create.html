@@ -6,38 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UrselsQuizApp</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <h1 class="header--headline-1">Create</h1>
+      <h1 class="header__headline-1">Create</h1>
     </header>
+
+    <main class="main">
+      <form action="/mywebsite" class="form">
+        <div class="form__area">
+          <label for="question" class="form__label">Ask</label>
+          <input
+            type="textarea"
+            id="question"
+            name="question"
+            placeholder="Add a new quiz-question"
+            class="form__field"
+          />
+        </div>
+        <div class="form__area">
+          <label for="answer" class="form__label">Answer</label>
+          <input
+            type="textarea"
+            id="answer"
+            name="answer"
+            placeholder="Please enter correct answer"
+            class="form__field"
+          />
+        </div>
+        <div class="form__area">
+          <label for="tags" class="form__label">Tags</label>
+          <input
+            type="textarea"
+            id="tags"
+            name="tags"
+            placeholder="Separate your tags by comma"
+            class="form__field"
+          />
+        </div>
+
+        <button class="button button__submit">Submit</button>
+      </form>
+    </main>
 
     <footer class="footer">
       <nav class="site">
-        <a href="./index.html" class="site--link site--link__clicked"
+        <a href="./index.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/home_black_24dp.svg"
             alt="home-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="./bookmarks.html" class="site--link site--link__clicked"
+        <a href="./bookmarks.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/bookmark_border_black_24dp.svg"
             alt="bookmark-link-icon"
-            class="site--img"
+            class="site__img"
         /></a>
-        <a href="#" class="site--link site--link__clicked"
+        <a href="#" class="site__link site__link--clicked"
           ><img
             src="./resources/img/edit_note_black_24dp.svg"
             alt="edit-note-link-icon"
-            class="site--img"
+            class="site__img"
           />
         </a>
-        <a href="./profile.html" class="site--link site--link__clicked"
+        <a href="./profile.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/account_box_black_24dp.svg"
-            alt=""
-            class="site--img"
+            alt="profile-link-icon"
+            class="site__img"
         /></a>
       </nav>
     </footer>
