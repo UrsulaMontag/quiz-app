@@ -1,13 +1,14 @@
 .button {
+  background-color: var(--items--bg-color);
+  outline-style: solid 1px var(--outline-dark);
+  border-radius: 6px;
+}
+
+.button__big {
   grid-row: 3/4;
   grid-column: 2/-2;
   justify-self: center;
   align-self: center;
 
   padding: 25px;
-}
-
-.button__big {
-  background-color: var(--items--bg-color);
-  outline-style: solid 1px var(--outline-dark);
 }

@@ -1,12 +1,17 @@
 .header {
-  grid-column: 1 /-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--items--bg-color);
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 8vh;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .header__headline-1 {
-  justify-self: center;
-  align-self: center;
+  _text-align: center;
 }

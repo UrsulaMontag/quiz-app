@@ -1,25 +1,28 @@
 .footer {
-  grid-row: 3 / -1;
-  grid-column: 1 /-1;
+  display: flex;
+  justify-content: center;
   align-items: center;
 
-  position: sticky;
-  bottom: 0;
-  height: 100%;
+  background-color: var(--items--bg-color);
+  min-width: 100vw;
+  min-height: 9vh;
 
-  background-color: salmon;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
 }
 
 .site {
-  background-color: yellow;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+
+  min-width: inherit;
+  min-height: inherit;
 }
 
-.site__link {
-  min-height: 100%;
-  align-self: stretch;
-  transform: scale();
-  background-color: yellow;
+.site__img {
+  min-width: 25vw;
+  max-height: 9vh;
+  align-self: center;
 }

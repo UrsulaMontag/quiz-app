@@ -47,5 +47,6 @@
 .card__footer-tag {
   background-color: var(--items--bg-color);
   border: 0.5px solid var(--outline-dark);
+  border-radius: 6px;
   padding: 5px;
 }

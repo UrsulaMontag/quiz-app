@@ -1,23 +1,32 @@
-.form {
+.about {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-
-  min-height: ;
-
-  _background-color: olivedrab;
-}
-
-.about__header {
-  display: flex;
-  justify-content: space-between;
+  min-width: 80vw;
 
   background-color: orange;
 }
+.about__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  max-height: 20vh;
+
+  position: fixed;
+  top: 9vh;
+}
 
 .about__pic {
-  transform: scale(0.25);
-  border-radius: 50%;
-  align-self: flex-start;
+  height: 200px;
+  border-radius: 25%;
+  max-width: 35vw;
+
+  background-color: blue;
+}
+
+.about__headline-2 {
+  max-width: 35vw;
+  font-size: 1.8rem;
 }

@@ -18,32 +18,29 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-columns: 10% 1fr 10%;
-  grid-template-rows: 10vh 1fr 10vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 25px;
+  gap: 2.5rem;
 
-  margin: 10px;
+  _margin: 10px;
   min-height: 100vh;
-  _min-width: 100vw;
 
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
 
   color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 }
 
 .main {
-  grid-column: 2 / 3;
-  grid-row: 2 / auto;
-  row-gap: 5rem;
-
-  min-height: calc(100vh-20vh);
-  background-color: var(--main-bg-color);
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 2.5rem;
+
+  min-height: calc(100vh-18vh);
+
+  max-width: 80vw;
 }
