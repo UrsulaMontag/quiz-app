@@ -2,6 +2,7 @@
   background-color: var(--items--bg-color);
   outline-style: solid 1px var(--outline-dark);
   border-radius: 6px;
+  padding: 1rem;
 }
 
 .button__big {
@@ -10,5 +11,5 @@
   justify-self: center;
   align-self: center;
 
-  padding: 25px;
+  padding: 2rem;
 }

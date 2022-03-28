@@ -14,7 +14,7 @@ This is a little quiz-app. Enjoy and have fun and maybe you learn something new 
 
 ## Launch
 
-Please clone the project remote and open it in your prefered browser.
+Please open the project in your prefered browser.
 
 ## Further Notes
 

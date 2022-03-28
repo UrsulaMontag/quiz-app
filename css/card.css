@@ -8,6 +8,8 @@
   border: 2px solid var(--outline-dark);
   border-radius: 0.6rem;
   box-shadow: 4px -3px var(--outline-shadow);
+
+  min-height: 100%;
 }
 
 .card__header-box {
@@ -40,8 +42,14 @@
 .card__footer-box {
   grid-row: 5/-1;
   grid-column: 1/-1;
+
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  max-width: 100%;
+  padding: 0.5rem;
 }
 
 .card__footer-tag {

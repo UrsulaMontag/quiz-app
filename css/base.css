@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: none;
+  opacity: 1;
   box-sizing: border-box;
 }
 
@@ -9,9 +11,10 @@ html {
 }
 
 :root {
-  --main-bg-color: #0caba880;
-  --main-text-color: #023535;
-  --items--bg-color: #8c767280;
+  --main-bg-color: #034159;
+  --main-text-color: #d9ccc5;
+  --items--bg-color: #02735e;
+  --header-footer-color: #025951;
   --items-text-color: white;
   --outline-dark: black;
   --outline-shadow: darkgray;
@@ -24,11 +27,12 @@ body {
   align-items: center;
   gap: 2.5rem;
 
-  _margin: 10px;
   min-height: 100vh;
 
-  font-size: 1.6rem;
-  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  font-family: Calibri, sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
 
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
@@ -40,7 +44,7 @@ body {
   justify-content: space-evenly;
   gap: 2.5rem;
 
+  padding: 11vh 0;
   min-height: calc(100vh-18vh);
-
   max-width: 80vw;
 }

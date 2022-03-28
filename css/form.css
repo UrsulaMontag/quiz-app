@@ -1,17 +1,15 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap: 25px;
 
   position: relative;
 
   min-width: 80vw;
   min-height: 100vh;
-  overflow: hidden;
 
-  background-color: olivedrab;
+  padding: 3rem 0;
 }
 
 .form__label {
@@ -35,4 +33,5 @@
 
 .form__field[placeholder] {
   color: grey;
+  padding-left: 2rem;
 }
