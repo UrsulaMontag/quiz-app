@@ -11,13 +11,13 @@ html {
 }
 
 :root {
-  --main-bg-color: #034159;
-  --main-text-color: #d9ccc5;
-  --items--bg-color: #02735e;
-  --header-footer-color: #025951;
+  --main-bg-color: #124026;
+  --main-text-color: #e5f2c9;
+  --items--bg-color: #90bf49;
+  --header-footer-color: #4d8c4a;
   --items-text-color: white;
-  --outline-dark: black;
-  --outline-shadow: darkgray;
+  --outline-dark: #4d8c4a;
+  --outline-shadow: #00000060;
 }
 
 body {
@@ -33,6 +33,7 @@ body {
   font-family: Calibri, sans-serif;
   letter-spacing: 0.1rem;
   font-weight: 200;
+  text-align: center;
 
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
