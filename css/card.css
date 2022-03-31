@@ -21,18 +21,6 @@
   left: 1rem;
 }
 
-.card__header-bookmark {
-  position: absolute;
-  right: 5%;
-  top: -2.5rem;
-
-  transform: scale(2);
-}
-
-.hidden {
-  display: none;
-}
-
 .card__question {
   grid-row: 2/3;
   grid-column: 2/-2;
