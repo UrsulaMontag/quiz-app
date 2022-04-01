@@ -1,7 +1,7 @@
-@import "./base.css";
-@import "./card.css";
-@import "./button.css";
-@import "./footer.css";
-@import "./header.css";
-@import "./other.css";
-@import "./form.css";
+@import "./base/base.css";
+@import "./card/card.css";
+@import "./button/button.css";
+@import "./footer/footer.css";
+@import "./header/header.css";
+@import "./other/other.css";
+@import "./form/form.css";
