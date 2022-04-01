@@ -13,7 +13,7 @@
       <h1 class="header__headline-1">Quiz-App</h1>
     </header>
 
-    <main class="main">
+    <main class="home main" data-js="home">
       <section class="card card__card--1">
         <header class="card__header-box">
           <svg
@@ -83,12 +83,24 @@
             width="24px"
             fill="#000000"
             class="card__header-bookmark"
-            data-js="card-bookmark"
+            data-js="bookmark1"
           >
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
             />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark hidden"
+            data-js="bookmark2"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
           </svg>
 
           <h2 class="card__header-headline-2">Question</h2>
@@ -99,12 +111,20 @@
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
           dolor. Nisi.
         </p>
-        <button class="button button__big">SHOW ANSWER</button>
-        <p class="card__answer">
+        <button class="button button__big" data-js="buttonShow">
+          SHOW ANSWER
+        </button>
+        <button class="button button__big hidden" data-js="buttonHide">
+          HIDE ANSWER
+        </button>
+        <p class="card__answer hidden" data-js="answer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
           unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
           facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
-          totam?
+          totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          provident minima laborum itaque odio iste, voluptatem, sapiente
+          consequuntur cupiditate nesciunt illo! Odit modi excepturi animi,
+          distinctio numquam consequatur iste labore.
         </p>
         <footer class="card__footer-box">
           <span class="card__footer-tag">blablubb</span
@@ -123,12 +143,24 @@
             width="24px"
             fill="#000000"
             class="card__header-bookmark"
-            data-js="card-bookmark"
+            data-js="bookmark1"
           >
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
             />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark hidden"
+            data-js="bookmark2"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
           </svg>
 
           <h2 class="card__header-headline-2">Question</h2>
@@ -139,12 +171,20 @@
           nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
           dolor. Nisi.
         </p>
-        <button class="button button__big">SHOW ANSWER</button>
-        <p class="card__answer">
+        <button class="button button__big" data-js="buttonShow">
+          SHOW ANSWER
+        </button>
+        <button class="button button__big hidden" data-js="buttonHide">
+          HIDE ANSWER
+        </button>
+        <p class="card__answer hidden" data-js="answer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
           unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
           facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
-          totam?
+          totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          provident minima laborum itaque odio iste, voluptatem, sapiente
+          consequuntur cupiditate nesciunt illo! Odit modi excepturi animi,
+          distinctio numquam consequatur iste labore.
         </p>
         <footer class="card__footer-box">
           <span class="card__footer-tag">blablubb</span
@@ -155,14 +195,213 @@
       </section>
     </main>
 
+    <main class="bookmark main" data-js="bookmark">
+      <section class="card card__card--1">
+        <header class="card__header-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark"
+            data-js="bookmark1"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark hidden"
+            data-js="bookmark2"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+          </svg>
+
+          <h2 class="card__header-headline-2">Question</h2>
+        </header>
+        <p class="card__question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
+          nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
+          dolor. Nisi.
+        </p>
+        <button class="button button__big" data-js="buttonShow">
+          SHOW ANSWER
+        </button>
+        <button class="button button__big hidden" data-js="buttonHide">
+          HIDE ANSWER
+        </button>
+        <p class="card__answer hidden" data-js="answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+          unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
+          facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
+          totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          provident minima laborum itaque odio iste, voluptatem, sapiente
+          consequuntur cupiditate nesciunt illo! Odit modi excepturi animi,
+          distinctio numquam consequatur iste labore.
+        </p>
+        <footer class="card__footer-box">
+          <span class="card__footer-tag">blablubb</span
+          ><span class="card__footer-tag">blubb</span
+          ><span class="card__footer-tag">blubbbla</span
+          ><span class="card__footer-tag">blab</span>
+        </footer>
+      </section>
+
+      <section class="card card__card--3">
+        <header class="card__header-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark"
+            data-js="bookmark1"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+            class="card__header-bookmark hidden"
+            data-js="bookmark2"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+          </svg>
+
+          <h2 class="card__header-headline-2">Question</h2>
+        </header>
+        <p class="card__question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          incidunt non delectus eveniet laboriosam neque voluptatibus, culpa
+          nisi quas alias, est eius cum. Corporis veniam mollitia vel libero
+          dolor. Nisi.
+        </p>
+        <button class="button button__big" data-js="buttonShow">
+          SHOW ANSWER
+        </button>
+        <button class="button button__big hidden" data-js="buttonHide">
+          HIDE ANSWER
+        </button>
+        <p class="card__answer hidden" data-js="answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate,
+          unde cupiditate quas odio minus ipsam voluptatibus pariatur ab culpa
+          facere amet. Iure consequuntur nihil corrupti sequi. Esse ut autem
+          totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          provident minima laborum itaque odio iste, voluptatem, sapiente
+          consequuntur cupiditate nesciunt illo! Odit modi excepturi animi,
+          distinctio numquam consequatur iste labore.
+        </p>
+        <footer class="card__footer-box">
+          <span class="card__footer-tag">blablubb</span
+          ><span class="card__footer-tag">blubb</span
+          ><span class="card__footer-tag">blubbbla</span
+          ><span class="card__footer-tag">blab</span>
+        </footer>
+      </section>
+    </main>
+
+    <main class="form main" data-js="form">
+      <form action="/mywebsite" class="form">
+        <div class="form__area">
+          <label for="question" class="form__label">Ask</label>
+          <input
+            type="textarea"
+            id="question"
+            name="question"
+            placeholder="Add a new quiz-question"
+            class="form__field"
+          />
+        </div>
+        <div class="form__area">
+          <label for="answer" class="form__label">Answer</label>
+          <input
+            type="textarea"
+            id="answer"
+            name="answer"
+            placeholder="Please enter correct answer"
+            class="form__field"
+          />
+        </div>
+        <div class="form__area">
+          <label for="tags" class="form__label">Tags</label>
+          <input
+            type="textarea"
+            id="tags"
+            name="tags"
+            placeholder="Separate your tags by comma"
+            class="form__field"
+          />
+        </div>
+
+        <button class="button button__submit">Submit</button>
+      </form>
+    </main>
+
+    <main class="profile main about__main" data-js="profile">
+      <section class="about">
+        <figure class="about__header">
+          <img
+            src="./resources/img/danie-franco-l9I93gZKTG4-unsplash_square.jpg"
+            alt="nice profile
+          pic"
+            class="about__pic"
+          />
+          <figcaption class="about__headline-2">
+            <h2>Eugenie Schlotterbeck</h2>
+          </figcaption>
+        </figure>
+        <p class="about__text">
+          Das Leben ist kein Ponyhof. Lerne jeden Tag - denn was in deinem Kopf
+          ist, das kann dir keiner nehmen.
+        </p>
+      </section>
+
+      <section class="favorites">
+        <h2 class="favorites__headline-2">Favorites</h2>
+        <ul class="favorites__list">
+          <li class="favorites__list-item">coding</li>
+          <li class="favorites__list-item">nature</li>
+          <li class="favorites__list-item">books</li>
+          <li class="favorites__list-item">coffee</li>
+        </ul>
+      </section>
+
+      <button class="button button__logout">LOGOUT</button>
+    </main>
+
     <footer class="footer">
       <nav class="site">
-        <a href="#" class="site__link site__link--clicked"
-          ><img
-            src="./resources/img/home_black_24dp.svg"
-            alt="home-link-icon"
-            class="site__img"
-        /></a>
+        <button class="site__link site__link--clicked" data-js="navHome">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+            />
+          </svg>
+        </button>
         <a href="./bookmarks.html" class="site__link site__link--clicked"
           ><img
             src="./resources/img/bookmark_border_black_24dp.svg"

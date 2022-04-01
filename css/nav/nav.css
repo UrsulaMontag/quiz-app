@@ -1,0 +1,16 @@
+.site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100%;
+  min-height: inherit;
+}
+
+.site__img {
+  min-width: 25vw;
+  max-height: 9vh;
+  align-self: center;
+
+  filter: brightness(7);
+}

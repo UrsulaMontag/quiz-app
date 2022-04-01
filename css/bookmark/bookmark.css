@@ -1,0 +1,7 @@
+.card__header-bookmark {
+  position: absolute;
+  right: 5%;
+  top: -2.5rem;
+
+  transform: scale(2);
+}
