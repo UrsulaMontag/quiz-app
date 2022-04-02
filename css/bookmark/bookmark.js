@@ -1,8 +1,7 @@
-export default function Bookmark() {
-  const bookmark = document.querySelector('[data-js="bookmark1"]');
-  console.log(bookmark);
+export default function Bookmark(bookmarkElement) {
+  const bookmark = bookmarkElement.querySelector('[data-js="bookmark1"]');
 
-  const bookmarkActive = document.querySelector('[data-js="bookmark2"]');
+  const bookmarkActive = bookmarkElement.querySelector('[data-js="bookmark2"]');
 
   bookmark.addEventListener("click", () => {
     bookmark.classList.toggle("hidden");
