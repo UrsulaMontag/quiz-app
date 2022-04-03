@@ -1,7 +1,10 @@
 .button {
-  background-color: var(--items--bg-color);
-  outline-style: solid 1px var(--outline-dark);
+  color: var(--main-text-color);
+  background: linear-gradient(to bottom right, #32305099 0%, #45214A99 100%);
+  
   border-radius: 6px;
+  border-color: var(--main-bg-color);
+  
   padding: 1rem;
 }
 
@@ -12,4 +15,7 @@
   align-self: center;
 
   padding: 2rem;
+
+  box-shadow: 3px -2px var(--outline-shadow);
 }
+

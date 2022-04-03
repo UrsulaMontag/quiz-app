@@ -5,7 +5,7 @@
   align-items: flex-start;
   row-gap: 2rem;
 
-  border: 2px solid var(--outline-dark);
+  background-color: var(--main-bg-color);
   border-radius: 0.6rem;
   box-shadow: 4px -3px var(--outline-shadow);
 
@@ -46,7 +46,7 @@
 
 .card__footer-tag {
   background-color: var(--items--bg-color);
-  border: 0.5px solid var(--outline-dark);
+  border: 0.5px solid var(--main-bg-color);
   border-radius: 6px;
   padding: 5px;
 }

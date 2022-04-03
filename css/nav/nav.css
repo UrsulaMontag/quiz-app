@@ -1,16 +1,15 @@
 .site {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  _align-items: center;
 
-  min-width: 100%;
-  min-height: inherit;
+  min-width: 100vw;
+  _margin: 0 3px;
 }
 
 .site__img {
-  min-width: 25vw;
-  min-height: 9vh;
-  align-self: center;
+  transform: scale(2);
+  min-width: 20vw;
+  _fill: var(--header-footer-color);
 
-  filter: brightness(7);
-}
+  }
