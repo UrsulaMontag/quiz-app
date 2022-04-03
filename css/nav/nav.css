@@ -9,7 +9,7 @@
 
 .site__img {
   min-width: 25vw;
-  max-height: 9vh;
+  min-height: 9vh;
   align-self: center;
 
   filter: brightness(7);
