@@ -1,15 +1,11 @@
 .site {
   display: flex;
   justify-content: space-evenly;
-  _align-items: center;
-
+  
   min-width: 100vw;
-  _margin: 0 3px;
 }
 
 .site__img {
   transform: scale(2);
   min-width: 20vw;
-  _fill: var(--header-footer-color);
-
   }

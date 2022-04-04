@@ -13,7 +13,6 @@ export default function Button(buttonElement) {
         ? (buttonElement.textContent = "Logout")
         : (buttonElement.textContent = "Login");
     } else if (buttonElement.getAttribute("data-js") === "navBookmark") {
-      console.log(buttonElement);
       document.querySelector('[data-js = "home"]').classList.add("hidden");
       document
         .querySelector('[data-js = "bookmark"]')
@@ -25,6 +24,13 @@ export default function Button(buttonElement) {
       document.querySelector('[data-js = "bookmark"]').classList.add("hidden");
       document.querySelector('[data-js = "create"]').classList.remove("hidden");
       document.querySelector('[data-js = "profile"]').classList.add("hidden");
+    } else if (buttonElement.getAttribute("data-js") === "navProfile") {
+      document.querySelector('[data-js = "home"]').classList.add("hidden");
+      document.querySelector('[data-js = "bookmark"]').classList.add("hidden");
+      document.querySelector('[data-js = "create"]').classList.add("hidden");
+      document
+        .querySelector('[data-js = "profile"]')
+        .classList.remove("hidden");
     } else if (buttonElement.getAttribute("data-js") === "navHome") {
       document.querySelector('[data-js = "home"]').classList.remove("hidden");
       document.querySelector('[data-js = "bookmark"]').classList.add("hidden");

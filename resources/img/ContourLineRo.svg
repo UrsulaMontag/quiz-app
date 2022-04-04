@@ -22,7 +22,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.78263889"
-     inkscape:cx="312.40461"
+     inkscape:cx="249.79592"
      inkscape:cy="686.77906"
      inkscape:window-width="1296"
      inkscape:window-height="969"
@@ -34,7 +34,10 @@
      mask="url(#SvgjsMask1000)"
      fill="none"
      id="g42"
-     transform="matrix(0,-1,-1,0,560,1440)">
+     transform="matrix(0,-1,-1,0,560,1440)"
+     inkscape:export-filename="/Users/ursulamontag/Development/muc-web-22-2/quiz-app/resources/img/g42.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
     <rect
        width="1440"
        height="560"
