@@ -13,7 +13,7 @@
       <h1 class="header__headline-1">Quiz-App</h1>
     </header>
 
-    <main class="home main" data-js="home">
+    <article class="home main" data-js="home">
       <section class="card card__card--1">
         <header class="card__header-box">
           <svg
@@ -211,9 +211,9 @@
           ><span class="card__footer-tag">blab</span>
         </footer>
       </section>
-    </main>
+    </article>
 
-    <main class="bookmark main hidden" data-js="bookmark">
+    <article class="bookmark main hidden" data-js="bookmark">
       <section class="card card__card--1">
         <header class="card__header-box">
           <svg
@@ -345,9 +345,9 @@
           ><span class="card__footer-tag">blab</span>
         </footer>
       </section>
-    </main>
+    </article>
 
-    <main class="main hidden" data-js="form">
+    <article class="main hidden" data-js="form">
       <form action="/mywebsite" class="form">
         <div class="form__area">
           <label for="question" class="form__label">Ask</label>
@@ -384,9 +384,9 @@
           Submit
         </button>
       </form>
-    </main>
+    </article>
 
-    <main class="profile main hidden about__main" data-js="profile">
+    <article class="profile main hidden about__main" data-js="profile">
       <section class="about">
         <figure class="about__header">
           <img
@@ -416,11 +416,11 @@
       </section>
 
       <button class="button" data-js="buttonLogout">LOGOUT</button>
-    </main>
+    </article>
 
     <footer class="footer">
       <nav class="site">
-        <button class="button butttonSite">
+        <button class="button butttonSite" data-js="navHome">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -428,7 +428,6 @@
             width="24px"
             fill="#000000"
             class="site__img"
-            data-js="navHome"
             aria-labelledby="ariaTitleHomeicon"
           >
             <title id="ariaTitleHomeicon">Create a new quiz question</title>
@@ -438,7 +437,7 @@
             />
           </svg>
         </button>
-        <button class="button butttonSite">
+        <button class="button butttonSite" data-js="navBookmark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -446,7 +445,6 @@
             width="24px"
             fill="#000000"
             class="site__img"
-            data-js="navBookmark"
             aria-labelledby="ariaTitleBookmarkicon"
           >
             <title id="ariaTitleBookmarkicon">
@@ -456,7 +454,7 @@
             <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
           </svg>
         </button>
-        <button class="button butttonSite">
+        <button class="button butttonSite" data-js="navCreate">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             enable-background="new 0 0 24 24"
@@ -465,7 +463,6 @@
             width="24px"
             fill="#000000"
             class="site__img"
-            data-js="navCreate"
             aria-labelledby="ariaTitleCrateicon"
           >
             <title id="ariaTitleCrateicon">Create a new quiz question</title>
@@ -476,7 +473,7 @@
             />
           </svg>
         </button>
-        <button class="button buttonSite">
+        <button class="button buttonSite" data-js="navProfile">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -484,7 +481,6 @@
             width="24px"
             fill="#000000"
             class="site__img"
-            data-js="navProfile"
             aria-labelledby="ariaTitleProfileicon"
           >
             <title id="ariaTitleProfileicon">
