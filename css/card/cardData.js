@@ -1,3 +1,6 @@
+import Button from "../button/button.js";
+import Bookmark from "../bookmark/bookmark.js";
+
 export default function CardQuestions() {
   const cardData = [
     {
@@ -22,4 +25,91 @@ export default function CardQuestions() {
       tags: ["js", "next", "advanced"],
     },
   ];
+  const cardsContainer = document.querySelector('[data-js="home"]');
+
+  cardData.forEach((dataItem) => {
+    const questionCard = document.createElement("article");
+    //console.log(questionCard);
+
+    questionCard.classList.add("card");
+
+    questionCard.innerHTML = `
+  <header class="card__header-box">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 0 24 24"
+    width="24px"
+    fill="#000000"
+    class="card__header-bookmark"
+    data-js="bookmark1"
+    aria-labelledby="ariaTitleBookmark1"
+  >
+    <title id="ariaTitleBookmark1">Mark your favorite questions</title>
+    <path d="M0 0h24v24H0V0z" fill="none" />
+    <path
+      d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 0 24 24"
+    width="24px"
+    fill="#000000"
+    class="card__header-bookmark hidden"
+    data-js="bookmark2"
+    aria-labelledby="ariaTitleBookmark2"
+  >
+    <title id="ariaTitleBookmark2">
+      Unmark the questions you no longer need
+    </title>
+    <path d="M0 0h24v24H0V0z" fill="none" />
+    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+  </svg>
+
+  <h2 class="card__header-headline-2">Question</h2>
+</header>
+<p class="card__question">
+  ${dataItem.question}
+</p>
+<button class="button button__big" data-js="buttonCard">SHOW ANSWER</button>
+<button class="button button__big hidden" data-js="buttonCard">
+  HIDE ANSWER
+</button>
+<p class="card__answer hidden" data-js="answer">
+  ${dataItem.answer}
+</p>
+
+      `;
+    const listElement = document.createElement("ul");
+    listElement.className = "card__footer-box";
+    cardsContainer.append(questionCard);
+
+    dataItem.tags.forEach((tag) => {
+      const tagItem = document.createElement("li");
+      tagItem.className = "card__footer-tag";
+
+      tagItem.textContent = tag;
+      listElement.append(tagItem);
+    });
+    cardsContainer.append(questionCard);
+
+    Button(questionCard);
+  });
+
+  const Cards = document.querySelectorAll(".card");
+  Cards.forEach((card) => {
+    Bookmark(card);
+  });
+  //   const url =
+  //     "https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple";
+  //   async function questionFetch(apiData) {
+  //     try {
+  //       const response = await fetch(apiData);
+  //       const data = await response.json();
+  //       convertOurDataToHTML(data.results);
+  //     } catch (error) {
+  //       console.error(`Upps das war ein Fehler: ${error}`);
+  //     }
 }
