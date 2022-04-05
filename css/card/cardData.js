@@ -94,22 +94,21 @@ export default function CardQuestions() {
       listElement.append(tagItem);
     });
     cardsContainer.append(questionCard);
-
-    Button(questionCard);
   });
+
+  //   const cardButton = questionCard.querySelector('[data-js="buttonCard"]');
+
+  //   cardButton.addEventListener("click", () => {
+  //     const answerElement = questionCard.querySelector('[data-js="answer"]');
+  //     answerElement.classList.toggle("hidden");
+  //     answerElement.classList.contains("hidden")
+  //       ? (buttonElement.textContent = "Show Answer")
+  //       : (buttonElement.textContent = "Hide Answer");
+  //   });
 
   const Cards = document.querySelectorAll(".card");
   Cards.forEach((card) => {
     Bookmark(card);
+    Button(card);
   });
-  //   const url =
-  //     "https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple";
-  //   async function questionFetch(apiData) {
-  //     try {
-  //       const response = await fetch(apiData);
-  //       const data = await response.json();
-  //       convertOurDataToHTML(data.results);
-  //     } catch (error) {
-  //       console.error(`Upps das war ein Fehler: ${error}`);
-  //     }
 }
