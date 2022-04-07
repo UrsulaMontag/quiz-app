@@ -16,7 +16,7 @@
   grid-row: 1/2;
   grid-column: 1/-1;
 
-  position: relative;
+  _position: relative;
   top: 1rem;
   left: 1rem;
 }
