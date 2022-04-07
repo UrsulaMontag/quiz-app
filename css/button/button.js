@@ -2,7 +2,7 @@ export default function Button(buttonElement) {
   buttonElement.addEventListener('click', () => {
     if (buttonElement.getAttribute('data-js') === 'buttonCard') {
       const parentCard = buttonElement.parentElement;
-      console.log(parentCard);
+      //console.log(parentCard);
       const answerElement = parentCard.querySelector('[data-js="answer"]');
       answerElement.classList.toggle('hidden');
       answerElement.classList.contains('hidden')
