@@ -1,13 +1,13 @@
-import Button from "../button/button.js";
-import Bookmark from "../bookmark/bookmark.js";
+import Button from '../button/button.js';
+import Bookmark from '../bookmark/bookmark.js';
 
 export default function CardQuestions(questionData) {
   const cardsContainer = document.querySelector('[data-js="home"]');
 
-  questionData.forEach((dataItem) => {
-    const questionCard = document.createElement("article");
+  questionData.forEach(dataItem => {
+    const questionCard = document.createElement('article');
 
-    questionCard.classList.add("card");
+    questionCard.classList.add('card');
 
     questionCard.innerHTML = `
   <header class="card__header-box">
@@ -58,13 +58,13 @@ export default function CardQuestions(questionData) {
       `;
     cardsContainer.append(questionCard);
 
-    const listElement = document.createElement("ul");
-    listElement.className = "card__footer-box";
+    const listElement = document.createElement('ul');
+    listElement.className = 'card__footer-box';
 
     dataItem.tags = [dataItem.category, dataItem.type, dataItem.difficulty];
-    dataItem.tags.forEach((tag) => {
-      const tagItem = document.createElement("li");
-      tagItem.className = "card__footer-tag";
+    dataItem.tags.forEach(tag => {
+      const tagItem = document.createElement('li');
+      tagItem.className = 'card__footer-tag';
 
       tagItem.textContent = tag;
       listElement.append(tagItem);
@@ -73,8 +73,8 @@ export default function CardQuestions(questionData) {
     cardsContainer.append(questionCard);
   });
 
-  const Cards = document.querySelectorAll(".card");
-  Cards.forEach((card) => {
+  const Cards = document.querySelectorAll('.card');
+  Cards.forEach(card => {
     Bookmark(card);
     const answerButton = card.querySelector('[data-js="buttonCard"]');
     Button(answerButton);

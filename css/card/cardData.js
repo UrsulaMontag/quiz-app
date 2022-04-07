@@ -1,7 +1,6 @@
-import CardQuestions from "./card.js";
+import CardQuestions from './card.js';
 
 export default async function CardData(urlAdress) {
-  const response = fetch(urlAdress);
   try {
     const response = await fetch(urlAdress);
     const data = await response.json();
