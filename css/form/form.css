@@ -1,31 +1,23 @@
-.form {
+.form__area {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  _gap: 2rem;
+  flex-wrap: wrap;
+  _align-items: center;
 
-  position: relative;
-
-  min-width: 80vw;
-  min-height: 100vh;
-
+  max-width: 80vw;
   padding: 3rem 0;
 }
 
 .form__label {
-  position: absolute;
-  left: 0;
+  min-width: 20%;
 
   font-size: 2rem;
   font-weight: bold;
 }
 
 .form__field {
-  min-width: 60vw;
+  min-width: 60%;
   min-height: 20vh;
-
-  position: absolute;
-  right: 0;
 
   border: 1px solid var(--outline-dark);
   border-radius: 6px;

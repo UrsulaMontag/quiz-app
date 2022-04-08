@@ -24,8 +24,14 @@
     <article class="bookmark main" data-js="bookmark"></article>
 
     <article class="main hidden" data-js="form">
-      <form action="/mywebsite" class="form">
-        <div class="form__area">
+      <form
+        action="/mywebsite"
+        class="form"
+        aria-labelledby="form-heading"
+        data-js="createForm"
+      >
+        <legend id="form-heading">Create your own questions</legend>
+        <fieldset class="form__area">
           <label for="question" class="form__label">Ask</label>
           <input
             type="textarea"
@@ -34,8 +40,6 @@
             placeholder="Add a new quiz-question"
             class="form__field"
           />
-        </div>
-        <div class="form__area">
           <label for="answer" class="form__label">Answer</label>
           <input
             type="textarea"
@@ -44,8 +48,6 @@
             placeholder="Please enter correct answer"
             class="form__field"
           />
-        </div>
-        <div class="form__area">
           <label for="tags" class="form__label">Tags</label>
           <input
             type="textarea"
@@ -54,7 +56,7 @@
             placeholder="Separate your tags by comma"
             class="form__field"
           />
-        </div>
+        </fieldset>
 
         <button class="button button__submit" data-js="buttonSubmit">
           Submit

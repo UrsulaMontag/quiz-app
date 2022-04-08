@@ -1,10 +1,8 @@
 import CardData from './css/card/cardData.js';
 import Nav from './css/nav/nav.js';
-
-// //const Cards = document.querySelectorAll(".card");
+import Create from './css/form/form.js';
 
 const navButtons = document.querySelectorAll('.buttonSite');
-console.log(navButtons);
 navButtons.forEach(navButton => {
   Nav(navButton);
 });
@@ -12,4 +10,5 @@ navButtons.forEach(navButton => {
 const urlApi =
   'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple';
 CardData(urlApi);
-console.log(CardData);
+
+Create();
