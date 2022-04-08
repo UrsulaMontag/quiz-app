@@ -1,11 +1,12 @@
 .button {
   color: var(--main-text-color);
-  background: linear-gradient(to bottom right, #32305099 0%, #45214A99 100%);
-  
+  background: linear-gradient(to bottom right, #32305099 0%, #45214a99 100%);
+
   border-radius: 6px;
   border-color: var(--main-bg-color);
-  
+
   padding: 1rem;
+  text-transform: uppercase;
 }
 
 .button__big {
@@ -18,4 +19,3 @@
 
   box-shadow: 3px -2px var(--outline-shadow);
 }
-

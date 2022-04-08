@@ -1,13 +1,15 @@
-import Button from "./css/button/button.js";
-import Bookmark from "./css/bookmark/bookmark.js";
+import CardData from './css/card/cardData.js';
+import Nav from './css/nav/nav.js';
 
-const Cards = document.querySelectorAll(".card");
-const Buttons = document.querySelectorAll(".button");
+// //const Cards = document.querySelectorAll(".card");
 
-Cards.forEach((card) => {
-  Bookmark(card);
+const navButtons = document.querySelectorAll('.buttonSite');
+console.log(navButtons);
+navButtons.forEach(navButton => {
+  Nav(navButton);
 });
 
-Buttons.forEach((element) => {
-  Button(element);
-});
+const urlApi =
+  'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple';
+CardData(urlApi);
+console.log(CardData);

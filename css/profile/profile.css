@@ -16,7 +16,7 @@
   min-width: 80vw;
   min-height: 100%;
 
-  font-family: "Architects Daughter";
+  font-family: 'Architects Daughter';
 }
 
 .about__header {
@@ -55,5 +55,5 @@
 }
 
 .favorites__list-item:not(:first-child) {
-  list-style: "|";
+  list-style: '|';
 }

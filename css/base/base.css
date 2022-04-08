@@ -12,15 +12,15 @@ html {
 }
 
 :root {
-  --main-bg-color: #21445B;
+  --main-bg-color: #21445b;
   --main-text-color: #e5f2c9;
-  --items--bg-color: #1A656699;
-  --header-footer-color: #1A6566;
+  --items--bg-color: #1a656699;
+  --header-footer-color: #1a6566;
   --items-text-color: white;
   --outline-dark: #4d8c4a;
   --outline-shadow: #00000060;
-   --button-bg-color-1: #323050;
-   --button-bg-color-2: #45214A;
+  --button-bg-color-1: #323050;
+  --button-bg-color-2: #45214a;
 }
 
 body {
@@ -53,6 +53,4 @@ body {
   padding: 15vh 0;
   min-height: calc(100vh-18vh);
   max-width: 80vw;
-
-  
 }

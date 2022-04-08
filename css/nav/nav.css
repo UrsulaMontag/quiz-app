@@ -1,11 +1,11 @@
 .site {
   display: flex;
   justify-content: space-evenly;
-  
+
   min-width: 100vw;
 }
 
 .site__img {
   transform: scale(2);
   min-width: 20vw;
-  }
+}
