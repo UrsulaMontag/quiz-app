@@ -14,7 +14,7 @@ html {
 :root {
   --main-bg-color: #21445b;
   --main-text-color: #e5f2c9;
-  --items--bg-color: #1a656699;
+  --items-bg-color: #1a656699;
   --header-footer-color: #1a6566;
   --items-text-color: white;
   --outline-dark: #4d8c4a;
@@ -51,6 +51,6 @@ body {
   gap: 2.5rem;
 
   padding: 15vh 0;
-  min-height: calc(100vh-18vh);
+  min-height: calc(100vh - 18);
   max-width: 80vw;
 }
