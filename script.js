@@ -7,8 +7,7 @@ navButtons.forEach(navButton => {
   Nav(navButton);
 });
 
-const urlApi =
-  'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple';
+const urlApi = 'https://opentdb.com/api.php?amount=50&category=18';
 CardData(urlApi);
 
 Create();

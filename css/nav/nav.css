@@ -6,6 +6,7 @@
 }
 
 .site__img {
-  transform: scale(2);
+  transform: scale(2, 2);
   min-width: 20vw;
+  align-self: center;
 }

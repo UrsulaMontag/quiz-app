@@ -1,42 +1,27 @@
 .card {
-  display: grid;
-  grid-template-columns: 10% repeat(4, 1fr) 10%;
-  grid-template-rows: 5rem auto 1fr auto 5rem;
-  align-items: flex-start;
-  row-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  position: relative;
 
   background-color: var(--main-bg-color);
   border-radius: 0.6rem;
   box-shadow: 4px -3px var(--outline-shadow);
 
-  min-height: 100%;
+  padding: 5%;
 }
 
-.card__header-box {
-  grid-row: 1/2;
-  grid-column: 1/-1;
-
-  position: relative;
-  top: 1rem;
-  left: 1rem;
-}
-
-.card__question {
-  grid-row: 2/3;
-  grid-column: 2/-2;
-}
-
-.card__answer {
-  grid-row: 4/5;
-  grid-column: 2/-2;
+.card__headline,
+.card__question,
+.card__answer,
+.card__footer-box {
+  width: 100%;
 }
 
 .card__footer-box {
-  grid-row: 5/-1;
-  grid-column: 1/-1;
-
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
 
@@ -48,7 +33,10 @@
   background-color: var(--items-bg-color);
   border: 0.5px solid var(--main-bg-color);
   border-radius: 6px;
-  padding: 5px;
+
+  padding: 1rem;
 
   list-style: none;
+
+  font-size: 1.8rem;
 }

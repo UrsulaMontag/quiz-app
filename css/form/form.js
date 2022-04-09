@@ -10,7 +10,6 @@ export default function Create() {
 
     const questionElement = create.elements.question;
     const answerElement = create.elements.correct_answer;
-    console.log(answerElement);
     const tagsElement = create.elements.tags;
 
     const newQuestionCard = {
