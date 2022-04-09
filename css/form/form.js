@@ -1,13 +1,16 @@
+import CardQuestions from '../card/card.js';
+
 export default function Create() {
   const create = document.querySelector('[data-js="createForm"]');
 
-  let questionCards = [];
+  let questionCards = document.querySelectorAll('.card');
+
   create.addEventListener('submit', event => {
     event.preventDefault();
 
     const questionElement = create.elements.question;
-    console.log(questionElement);
-    const answerElement = create.elements.answer;
+    const answerElement = create.elements.correct_answer;
+    console.log(answerElement);
     const tagsElement = create.elements.tags;
 
     const newQuestionCard = {
@@ -20,5 +23,6 @@ export default function Create() {
     };
 
     questionCards = [newQuestionCard, ...questionCards];
+    CardQuestions(questionCards);
   });
 }

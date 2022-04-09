@@ -1,57 +1,35 @@
-import Button from '../button/button.js';
 import Bookmark from '../bookmark/bookmark.js';
+import Button from '../button/button.js';
 
 export default function CardQuestions(questionData) {
   const cardsContainer = document.querySelector('[data-js="home"]');
+  cardsContainer.ariaBusy = 'true';
+  //cardsContainer.innerHTML = '';
 
-  questionData.forEach(dataItem => {
+  questionData.forEach((dataItem, id) => {
     const questionCard = document.createElement('article');
+    questionCard.className = 'card';
 
-    questionCard.classList.add('card');
-
+    //questionCard.setAttribute('[data-js="card"]');
+    console.log(questionCard);
     questionCard.innerHTML = `
   <header class="card__header-box">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height="24px"
-    viewBox="0 0 24 24"
-    width="24px"
-    fill="#000000"
-    class="card__header-bookmark"
-    data-js="bookmark1"
-    aria-labelledby="ariaTitleBookmark1"
-  >
-    <title id="ariaTitleBookmark1">Mark your favorite questions</title>
-    <path d="M0 0h24v24H0V0z" fill="none" />
-    <path
-      d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
-    />
-  </svg>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height="24px"
-    viewBox="0 0 24 24"
-    width="24px"
-    fill="#000000"
-    class="card__header-bookmark hidden"
-    data-js="bookmark2"
-    aria-labelledby="ariaTitleBookmark2"
-  >
-    <title id="ariaTitleBookmark2">
-      Unmark the questions you no longer need
-    </title>
-    <path d="M0 0h24v24H0V0z" fill="none" />
-    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-  </svg>
-
+  <button class="card__header-bookmark${
+    dataItem.isBookmarked ? 'card__header-bookmark--active' : ''
+  }" aria-label="Bookmark" aria-pressed="${
+      dataItem.isBookmarked ? 'true' : 'false'
+    }" data-js="bookmark1">
+      </button>
+  
   <h2 class="card__header-headline-2">Question</h2>
 </header>
 <p class="card__question" data-js="question">
   ${dataItem.question}
 </p>
-<button class="button button__big" data-js="buttonCard">SHOW ANSWER</button>
+<button class="button button__big" data-js="buttonCard" aria-controls="answer${id}"
+aria-expanded="false">Toggle Answer</button>
 </button>
-<p class="card__answer hidden" data-js="answer">
+<p class="card__answer" data-js="answer" id="answer${id}" hidden>
   ${dataItem.correct_answer}
 </p>
 
@@ -75,8 +53,10 @@ export default function CardQuestions(questionData) {
 
   const Cards = document.querySelectorAll('.card');
   Cards.forEach(card => {
-    Bookmark(card);
     const answerButton = card.querySelector('[data-js="buttonCard"]');
     Button(answerButton);
+    Bookmark(card);
   });
+
+  cardsContainer.ariaBusy = 'false';
 }

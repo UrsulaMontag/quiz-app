@@ -2,12 +2,11 @@ export default function Button(buttonElement) {
   buttonElement.addEventListener('click', () => {
     if (buttonElement.getAttribute('data-js') === 'buttonCard') {
       const parentCard = buttonElement.parentElement;
-      //console.log(parentCard);
       const answerElement = parentCard.querySelector('[data-js="answer"]');
-      answerElement.classList.toggle('hidden');
-      answerElement.classList.contains('hidden')
-        ? (buttonElement.textContent = 'Show Answer')
-        : (buttonElement.textContent = 'Hide Answer');
+      answerElement.toggleAttribute('hidden');
+      const oldExpandedState = buttonElement.getAttribute('aria-expanded');
+      const newExpandedState = oldExpandedState === 'true' ? 'false' : 'true';
+      buttonElement.setAttribute('aria-expanded', newExpandedState);
     } else if (buttonElement.getAttribute('data-js') === 'buttonLogout') {
       buttonElement.textContent === 'Login'
         ? (buttonElement.textContent = 'Logout')
